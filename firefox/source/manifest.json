@@ -1,0 +1,39 @@
+{
+  "description": "TODO",
+  "manifest_version": 2,
+  "name": "Feedlynx",
+  "version": "1.0",
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "48": "icon.svg",
+      "96": "icon.svg"
+    },
+    "default_title": "Feedlynx"
+//    "default_popup": "popup/geo.html",
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "feedlynx@wezm.net"
+    }
+  }
+}
