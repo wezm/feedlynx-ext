@@ -8,10 +8,7 @@
     "96": "icon.svg"
   },
 
-  "permissions": [
-    "tabs",
-    "storage"
-  ],
+  "permissions": ["notifications", "storage", "tabs"],
 
   "browser_action": {
     "default_icon": {
@@ -19,7 +16,6 @@
       "96": "icon.svg"
     },
     "default_title": "Feedlynx"
-//    "default_popup": "popup/geo.html",
   },
 
   "background": {
