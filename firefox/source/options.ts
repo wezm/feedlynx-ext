@@ -1,3 +1,5 @@
+"use strict";
+
 function saveOptions(e: SubmitEvent) {
   e.preventDefault();
 
