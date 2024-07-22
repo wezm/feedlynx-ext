@@ -1,9 +1,9 @@
 {
-  "name": "fix-github-emoji",
-  "version": "1.0.0",
-  "description": "Fix emoji on GitHub for Linux users",
+  "name": "feedlynx",
+  "version": "0.1.0-pre.4",
+  "description": "Add links to a Feedlynx server",
   "main": "source/background.js",
-  "repository": "https://github.com/wezm/github-system-emoji-extension.git",
+  "repository": "https://github.com/wezm/feedlynx-ext.git",
   "author": "Wesley Moore <wes@wezm.net>",
   "license": "MIT",
   "private": true,

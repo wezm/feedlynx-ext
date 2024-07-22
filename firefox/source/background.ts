@@ -14,9 +14,12 @@ browser.browserAction.onClicked.addListener((tab) => {
           token: results.token,
         });
 
+        let notification_subject = url;
         if (typeof tab.title == "string" && tab.title !== "") {
           body.set("title", tab.title);
+          notification_subject = tab.title;
         }
+        notification_subject = truncate(notification_subject);
 
         fetch(post_url, {
           method: "POST",
@@ -27,15 +30,18 @@ browser.browserAction.onClicked.addListener((tab) => {
             // TODO: Show the response body
             if (response.status != 201) {
               notify(
-                "Unable to add URL",
+                `Unable to add ${notification_subject}`,
                 `The request to add the URL was unsuccessful (${response.status})`,
               );
             }
             return response.text();
           })
-          .then((text) => notify("Added", "The link was added."))
+          .then((text) => notify("The link was added", `Added ${notification_subject}`))
           .catch((e) => {
-            notify("Unable to add URL", `The request to add the URL was unsuccessful.`);
+            notify(
+              `Unable to add ${notification_subject}`,
+              `The request to add the URL was unsuccessful.`,
+            );
           });
       } else {
         notify(
@@ -56,4 +62,14 @@ function notify(title: string, message: string) {
     title: title,
     message: message,
   });
+}
+
+const MAX_LEN = 30;
+function truncate(text: string): string {
+  const a = Array.from(text);
+  const substr = a.slice(0, MAX_LEN);
+  if (a.length > MAX_LEN) {
+    substr.push("…");
+  }
+  return substr.join("");
 }

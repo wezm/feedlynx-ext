@@ -1,8 +1,8 @@
 {
-  "description": "TODO",
+  "description": "Add links to a Feedlynx server",
   "manifest_version": 2,
   "name": "Feedlynx",
-  "version": "1.0",
+  "version": "0.1.4",
   "icons": {
     "48": "icon.svg",
     "96": "icon.svg"
