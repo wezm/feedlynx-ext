@@ -1,11 +1,7 @@
-# Feedlynx Brower Extension
+# Feedlynx Firefox Extension
 
-Browser extensions for [Feedlynx], a tool for capturing links to read or watch later
+Firefox extension for [Feedlynx], a tool for capturing links to read or watch later
 in an RSS feed.
-
-## Install
-
-<!-- [Download from Firefox Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/feedlynx/) -->
 
 ## Build from Source
 
@@ -23,7 +19,7 @@ Versions used (for AMO reviewers):
 
 <https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/#sign-for-self-distribution>
 
-    npx web-ext sign --channel=listed --amo-metadata=source/manifest.json --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET
+    npx web-ext sign --channel=unlisted --source=source/manifest.json --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET
 
 ## Acknowledgements
 
