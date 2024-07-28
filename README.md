@@ -12,3 +12,5 @@ Currently there is only a Firefox extension available for installing manually
 addons.mozilla.org after the initial release.
 
 * [Firefox](https://github.com/wezm/feedlynx-ext/releases/latest)
+
+[Feedlynx]: https://github.com/wezm/feedlynx
