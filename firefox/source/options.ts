@@ -1,5 +1,3 @@
-"use strict";
-
 function saveOptions(e: SubmitEvent) {
   e.preventDefault();
 
@@ -14,7 +12,7 @@ function restoreOptions() {
     browser.notifications.create(null, {
       type: "basic",
       iconUrl: browser.runtime.getURL("icon-96.png"),
-      title: "Unable to load settings",
+      title: "Unable to load Feedlynx settings",
       message: `Error: ${error}`,
     });
   }

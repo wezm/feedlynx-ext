@@ -1,17 +1,11 @@
 # Feedlynx Brower Extension
 
-TODO
-
-## Screenshot
-
-This screenshot shows the output before the extension is enabled and after
-(where it uses my system emoji font, [JoyPixels](https://www.joypixels.com/)).
-
-<img src="screenshots/Screenshot.png" width="613" alt="Screenshot showing emoji before/after enabling this extension">
+Browser extensions for [Feedlynx], a tool for capturing links to read or watch later
+in an RSS feed.
 
 ## Install
 
-[Download from Firefox Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/feedlynx/)
+<!-- [Download from Firefox Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/feedlynx/) -->
 
 ## Build from Source
 
