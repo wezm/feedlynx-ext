@@ -1,0 +1,24 @@
+{
+  "name": {
+    "en-US": "Feedlynx"
+  },
+  "slug": "feedlynx",
+  "compatibility": [
+      "android",
+      "firefox"
+  ],
+  "version": { "license": "MIT" },
+  "categories": { "firefox": ["feeds-news-blogging"] },
+  "summary": {
+    "en-US": "Feedlynx helps you collect links to read or watch later into an RSS feed."
+  },
+  "contributions_url": "https://github.com/sponsors/wezm",
+  "default_locale": "en-US",
+  "requires_payment": false,
+  "homepage": {
+    "en-US": "https://github.com/wezm/feedlynx"
+  },
+  "support_email": {
+    "en-US": "feedlynx@wezm.net"
+  }
+}
