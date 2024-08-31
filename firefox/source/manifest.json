@@ -2,7 +2,7 @@
   "description": "Add links to a Feedlynx server",
   "manifest_version": 2,
   "name": "Feedlynx",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "icons": {
     "48": "icon.svg",
     "96": "icon.svg"
