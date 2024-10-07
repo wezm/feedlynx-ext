@@ -20,7 +20,10 @@ browser.browserAction.onClicked.addListener((tab) => {
       return;
     }
 
-    const post_url = new URL("/add", results.host);
+    const post_url = new URL(
+      "add",
+      results.host.endsWith("/") ? results.host : results.host + "/",
+    );
 
     const body = new URLSearchParams({
       url: url,
@@ -50,7 +53,9 @@ browser.browserAction.onClicked.addListener((tab) => {
         }
         return response.text();
       })
-      .then((text) => notify("The link was added", `Added ${notification_subject}`))
+      .then((text) =>
+        notify("The link was added", `Added ${notification_subject}`),
+      )
       .catch((e) => {
         notify(
           `Unable to add ${notification_subject}`,

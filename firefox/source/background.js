@@ -13,7 +13,7 @@ browser.browserAction.onClicked.addListener((tab) => {
             notify("Feedlynx is not set up", "The Feedlynx extension needs to have the host and token configured in the settings.");
             return;
         }
-        const post_url = new URL("/add", results.host);
+        const post_url = new URL("add", results.host.endsWith("/") ? results.host : results.host + "/");
         const body = new URLSearchParams({
             url: url,
             token: results.token,
