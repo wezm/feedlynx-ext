@@ -23,5 +23,6 @@ Versions used (for AMO reviewers):
 
 ## Acknowledgements
 
-* Icon made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
-  from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.
+* Icon was drawn by [DiDoesDigital](https://didoesdigital.com/).
+
+[Feedlynx]: https://github.com/wezm/feedlynx
