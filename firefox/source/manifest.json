@@ -2,7 +2,7 @@
   "description": "Add links to a Feedlynx server",
   "manifest_version": 2,
   "name": "Feedlynx",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "icons": {
     "48": "icon.svg",
     "96": "icon.svg"
@@ -29,7 +29,10 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "feedlynx@wezm.net"
+      "id": "feedlynx@wezm.net",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }

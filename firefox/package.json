@@ -1,6 +1,6 @@
 {
   "name": "feedlynx",
-  "version": "0.1.0-pre.4",
+  "version": "0.2.0",
   "description": "Add links to a Feedlynx server",
   "main": "source/background.js",
   "repository": "https://github.com/wezm/feedlynx-ext.git",
