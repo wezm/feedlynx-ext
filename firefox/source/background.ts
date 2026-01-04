@@ -44,7 +44,6 @@ browser.browserAction.onClicked.addListener((tab) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     })
       .then((response) => {
-        // TODO: Show the response body
         if (response.status != 201) {
           notify(
             `Unable to add ${notification_subject}`,
@@ -54,7 +53,7 @@ browser.browserAction.onClicked.addListener((tab) => {
         return response.text();
       })
       .then((text) =>
-        notify("The link was added", `Added ${notification_subject}`),
+        notify("Feedlynx Success", `${text} ${notification_subject}`),
       )
       .catch((e) => {
         notify(
